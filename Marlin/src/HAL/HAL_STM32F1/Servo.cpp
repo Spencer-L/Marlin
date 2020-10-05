@@ -61,6 +61,8 @@ uint8_t ServoCount = 0;
 #define ANGLE_TO_US(a)    uint16_t(map((a),  minAngle, maxAngle, SERVO_DEFAULT_MIN_PW, SERVO_DEFAULT_MAX_PW))
 #define US_TO_ANGLE(us)    int16_t(map((us), SERVO_DEFAULT_MIN_PW, SERVO_DEFAULT_MAX_PW, minAngle, maxAngle))
 
+#define SERVO0_PIN PA2
+
 void libServo::servoWrite(uint8_t inPin, uint16_t duty_cycle) {
   #ifdef SERVO0_TIMER_NUM
     if (servoIndex == 0) {

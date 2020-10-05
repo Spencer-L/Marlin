@@ -124,6 +124,7 @@
 #define BEEPER_PIN         PC5
 #define SD_DETECT_PIN      PD12
 
+
 /**
  * Note: MKS Robin TFT screens use various TFT controllers.
  * If the screen stays white, disable 'LCD_RESET_PIN'
